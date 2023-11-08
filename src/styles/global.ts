@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle `
 body {
     background-color: ${props => props.theme['base-background']};
     color: ${props => props.theme['base-text']};
+    line-heignh: 160%;
     -webkit-font-smoothing: antialised;
 }
 
