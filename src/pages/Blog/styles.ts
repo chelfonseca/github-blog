@@ -10,3 +10,12 @@ export const BlogContainer = styled.div`
     align-items: center;
 
 `
+export const PostsContainer = styled.div`
+    width: 54rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+`
