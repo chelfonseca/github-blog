@@ -44,11 +44,17 @@ export const Header = styled.div`
         gap: 0.35rem;
         color: ${props => props.theme['blue']};
         font-size: 0.75rem;
+        border-bottom: 2px solid ${props => props.theme['base-profile']};
+        padding-top: 0.5rem;
 
         svg {
             width: 1rem;
             height: 1rem;
         }
+    }
+
+    a:hover{
+        border-bottom: 2px solid ${props => props.theme['blue']};
     }
 
 

@@ -32,6 +32,13 @@ export const SearchInput = styled.input`
     border: 1px solid ${props => props.theme['base-border']};
     border-radius: 3px;
     padding: 1rem;
+
+    &:hover{
+        border: 2px solid ${props => props.theme['blue']};
+    }
+    &:hover::placeholder{
+        color: ${props => props.theme['base-title']};
+    }
 `
 
 

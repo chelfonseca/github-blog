@@ -10,6 +10,11 @@ export const PostContainer = styled.div`
     background-color: ${props => props.theme['base-post']};
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid ${props => props.theme['base-post']};
+
+    &:hover{
+        border: 2px solid ${props => props.theme['blue']};
+    }
 `
 export const PostHeader = styled.div`
     display: flex;
