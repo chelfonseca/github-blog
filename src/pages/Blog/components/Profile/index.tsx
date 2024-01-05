@@ -1,5 +1,5 @@
 import { Avatar, Bio, BioContainer, Followers, Header, Info, InfoContainer, ProfileContainer } from "./styles";
-import { ArrowSquareUpRight, GithubLogo, Buildings, Users } from 'phosphor-react';
+import { ArrowSquareOut, GithubLogo, Buildings, Users } from 'phosphor-react';
 import avatar from '../../../../assets/avatar.svg';
 
 export function Profile() {
@@ -11,7 +11,7 @@ export function Profile() {
                     <h2>Cameron Williamson</h2>
                     <a>
                         <span>GITHUB</span>
-                        <ArrowSquareUpRight />
+                        <ArrowSquareOut />
                     </a>
                 </Header>
                 <Bio>Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass.

@@ -1,13 +1,15 @@
-import { PostSummary } from "./components/PostSummary";
-import { Profile } from "./components/Profile";
-import { Search } from "./components/Search";
-import { BlogContainer, PostsContainer } from "./styles";
+
+
+import { PostHeader } from "./components/PostHeader";
+import { PostContainer, PostContent } from "./styles";
+
 
 const posts = [{
     id: "1",
     title: "JavaScript data types and data structures",
     publishedAt: "1 day",
     content: "Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in ..."
+
 
 },
 {
@@ -26,31 +28,19 @@ const posts = [{
 }
 ]
 
-export function Blog() {
+export function Post() {
 
 
 
     return (
-        <BlogContainer>
-            <Profile />
-            <Search />
-            <PostsContainer>
-                {posts.map((post) => {
-                    return (
-                        <PostSummary
-                        key={post.id}
-                        id={post.id}
-                        title={post.title}
-                        publishedAt = { post.publishedAt } 
-                        content = { post.content }
-                    />
-                    )
-                })}
-                              
+        <PostContainer>
+            <PostHeader/>
+            <PostContent>
+                <p>{posts[0].content}</p>
 
+            </PostContent>
+            
 
-            </PostsContainer>
-
-        </BlogContainer>
+        </PostContainer>
     )
 }

@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const PostContainer = styled.div`
+export const PostSummaryContainer = styled.div`
     width: 26rem;
     height: 16.25rem;
     display: flex;
@@ -16,7 +16,7 @@ export const PostContainer = styled.div`
         border: 2px solid ${props => props.theme['blue']};
     }
 `
-export const PostHeader = styled.div`
+export const PostSummaryHeader = styled.div`
     display: flex;
     align-items: top;
     justify-content: space-between;
@@ -31,7 +31,7 @@ export const PublishedAt = styled.div`
     color: ${props => props.theme['base-span']};
     margin-top: 0;
 `
-export const PostContent = styled.p`
+export const PostSummaryContent = styled.p`
     color: ${props => props.theme['base-text']};
     line-height: 2rem;
 `

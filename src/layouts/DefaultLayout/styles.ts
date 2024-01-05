@@ -5,7 +5,7 @@ export const LayoutContainer = styled.div `
     display:flex;
     flex-direction: column;
     max-width: auto;
-    height: 100vh;
+    height: auto;
     padding: 0;
     align-items: center;
     justify-content: center;
